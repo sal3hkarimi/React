@@ -1,7 +1,8 @@
 import "./App.css";
+import IpInfo from "./Components/IpInfo";
 
 function App() {
-  return <div>div</div>;
+  return <IpInfo />;
 }
 
 export default App;
