@@ -8,7 +8,8 @@ class Body extends Component {
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
-    if (prevProps.chatList.height !== this.props.chatList.height) {
+    if (prevProps.chatList.length !== this.props.chatList.length) {
+      this.chatBody.current.scrollHeight;
       return this.chatBody.current.scrollHeight;
     }
     return null;
@@ -17,7 +18,7 @@ class Body extends Component {
   componentDidUpdate(prevProps, prevState, snapShot) {
     if (snapShot) {
       const chatBodyWrp = this.chatBody.current;
-      chatBodyWrp.scrollTop = chatBodyWrp.scrollHeight - snapShot;
+      return (chatBodyWrp.scrollTop = chatBodyWrp.scrollHeight - snapShot);
     }
   }
 
