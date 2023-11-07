@@ -12,8 +12,8 @@ export default function UseMemo() {
   const [firstCounter, setFirstCounter1] = useState(0);
   const [secondCounter, setSecondCounter2] = useState(0);
 
-//   const count = useMemo(() => wordCount("js"), []);
-  const count = wordCount("azim");
+  const count = useMemo(() => wordCount("js"), []);
+//   const count = wordCount("azim");
 
   //   const randomNumber = useMemo(
   //     () => (Math.random() * firstCounter).toString().slice(10),
