@@ -1,4 +1,5 @@
 import React from "react";
+import PureCmp from "./PureComponents";
 
 const style = {
   height: "100vh",
@@ -8,5 +9,9 @@ const style = {
 };
 
 export default function Concepts() {
-  return <div style={style}>asdf</div>;
+  return (
+    <div style={style}>
+      <PureCmp />
+    </div>
+  );
 }
